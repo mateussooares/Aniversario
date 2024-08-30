@@ -1,0 +1,84 @@
+/* Estilo geral para a galeria */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Cor de fundo */
+    background-image: url(images/jpeg-optimizer_blue-smoke-background-textured-wallpaper-high-resolution.jpg); /* Caminho para sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Garante que o corpo ocupe a altura total da viewport */
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-family: 'Krona One', cursive;
+    color: #A7DBE6; /* Azul claro */
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para a galeria de fotos */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para o player de áudio */
+.audio-player {
+    margin-top: 20px;
+    text-align: center;
+    /* Ajuste outras propriedades conforme necessário */
+}
+
+
+/* Estilo da seta de voltar */
+.back-arrow {
+    position: absolute; /* Posiciona a seta de forma absoluta em relação ao body */
+    left: 20px; /* Ajusta a distância da seta da borda esquerda */
+    bottom: 20px; /* Ajusta a distância da seta da borda inferior */
+    z-index: 1000; /* Garante que a seta fique sobre outros elementos */
+}
+
+/* Estilo da seta */
+.back-arrow img {
+    width: 400px; /* Ajusta o tamanho da seta */
+    height: auto; /* Mantém a proporção da seta */
+    cursor: pointer; /* Altera o cursor para indicar que a seta é clicável */
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.5)); /* Sombra sutil */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Transição suave */
+    transform: scaleX(-1); /* Inverte a seta horizontalmente */
+}
+
+/* Efeito hover com mudança de cor e leve aumento */
+.back-arrow img:hover {
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.7)); /* Intensifica a sombra */
+    transform: scaleX(-1) scale(1.1); /* Aumenta o tamanho da seta levemente e mantém a inversão */
+    filter: brightness(1.2); /* Aumenta o brilho da seta */
+}
+
