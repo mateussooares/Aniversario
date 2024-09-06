@@ -25,7 +25,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 80%; /* Ajusta a largura do container para deixar espaço nas laterais */
-    max-width: 600px; /* Largura máxima do container */
+    max-width: 650px; /* Largura máxima do container */
     text-align: center;
     margin: 20px 0; /* Espaçamento em cima e embaixo */
 }
@@ -93,30 +93,61 @@ p {
     filter: brightness(1.2); /* Aumenta o brilho da seta */
 }
 
+/* Botão de navegação */
+.btn-navegacao {
+    display: none; /* Oculte o botão por padrão */
+}
 
-
-
-/* Media Queries para dispositivos móveis */
+/* Media queries para dispositivos menores */
 @media (max-width: 768px) {
     .container {
-        width: 90%; /* Ajusta a largura do container para dispositivos menores */
-        padding: 15px; /* Reduz o padding em dispositivos menores */
-        margin: 10px 0; /* Ajusta a margem para dispositivos menores */
+        width: 90%;
+        padding: 15px;
+        margin: 10px auto;
+        min-height: auto;
     }
 
     h1 {
-        font-size: 24px; /* Ajusta o tamanho da fonte para o título principal em dispositivos menores */
+        font-size: 24px;
     }
 
     h2 {
-        font-size: 18px; /* Ajusta o tamanho da fonte para subtítulos em dispositivos menores */
+        font-size: 18px;
     }
 
     p {
-        font-size: 14px; /* Ajusta o tamanho da fonte para parágrafos em dispositivos menores */
+        font-size: 14px;
     }
 
     .conclusion {
-        font-size: 16px; /* Ajusta o tamanho da fonte para a conclusão em dispositivos menores */
+        font-size: 16px;
+        margin-bottom: 40px; /* Adiciona espaço extra abaixo da conclusão */
+    }
+
+    /* Esconde a seta em dispositivos móveis */
+    .arrow {
+        display: none;
+    }
+
+    /* Exibe o botão de navegação apenas em dispositivos móveis */
+    .btn-navegacao {
+        display: block; /* Agora o botão só aparece em telas menores */
+        text-align: center;
+        padding: 10px 20px;
+        background-color: #A7DBE6;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        border-radius: 5px;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 300px;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-navegacao:hover {
+        background-color: #0a1737; /* Efeito hover */
     }
 }
+

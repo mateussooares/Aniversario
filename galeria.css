@@ -3,12 +3,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Cor de fundo */
-    background-image: url(images/jpeg-optimizer_blue-smoke-background-textured-wallpaper-high-resolution.jpg); /* Caminho para sua imagem de fundo */
+    background-color: #f0f0f0;
+    background-image: url(images/jpeg-optimizer_blue-smoke-background-textured-wallpaper-high-resolution.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh; /* Garante que o corpo ocupe a altura total da viewport */
+    min-height: 100vh;
 }
 
 .container {
@@ -23,7 +23,7 @@ body {
 
 h1 {
     font-family: 'Krona One', cursive;
-    color: #A7DBE6; /* Azul claro */
+    color: #A7DBE6;
     font-weight: 600;
     margin-bottom: 20px;
     text-align: center;
@@ -53,32 +53,60 @@ h1 {
 .audio-player {
     margin-top: 20px;
     text-align: center;
-    /* Ajuste outras propriedades conforme necessário */
 }
-
 
 /* Estilo da seta de voltar */
 .back-arrow {
-    position: absolute; /* Posiciona a seta de forma absoluta em relação ao body */
-    left: 20px; /* Ajusta a distância da seta da borda esquerda */
-    bottom: 20px; /* Ajusta a distância da seta da borda inferior */
-    z-index: 1000; /* Garante que a seta fique sobre outros elementos */
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
 }
 
-/* Estilo da seta */
 .back-arrow img {
-    width: 400px; /* Ajusta o tamanho da seta */
-    height: auto; /* Mantém a proporção da seta */
-    cursor: pointer; /* Altera o cursor para indicar que a seta é clicável */
-    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.5)); /* Sombra sutil */
-    transition: filter 0.3s ease, transform 0.3s ease; /* Transição suave */
-    transform: scaleX(-1); /* Inverte a seta horizontalmente */
+    width: 400px;
+    height: auto;
+    cursor: pointer;
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.5));
+    transition: filter 0.3s ease, transform 0.3s ease;
+    transform: scaleX(-1);
 }
 
-/* Efeito hover com mudança de cor e leve aumento */
 .back-arrow img:hover {
-    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.7)); /* Intensifica a sombra */
-    transform: scaleX(-1) scale(1.1); /* Aumenta o tamanho da seta levemente e mantém a inversão */
-    filter: brightness(1.2); /* Aumenta o brilho da seta */
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.7));
+    transform: scaleX(-1) scale(1.1);
+    filter: brightness(1.2);
 }
 
+/* Botão de navegação */
+.btn-navegacao {
+    display: none; /* Oculte o botão por padrão */
+}
+
+/* Media queries para dispositivos menores */
+@media (max-width: 768px) {
+    .back-arrow {
+        display: none; /* Esconde a seta em dispositivos móveis */
+    }
+
+    /* Exibe o botão de navegação apenas em dispositivos móveis */
+    .btn-navegacao {
+        display: block;
+        text-align: center;
+        padding: 10px 20px;
+        background-color: #A7DBE6;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        border-radius: 5px;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 300px;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-navegacao:hover {
+        background-color: #0a1737; /* Efeito hover */
+    }
+}
