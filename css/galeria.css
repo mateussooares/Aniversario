@@ -1,4 +1,4 @@
-/* Estilo geral para a galeria */
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -29,7 +29,7 @@ h1 {
     text-align: center;
 }
 
-/* Estilo para a galeria de fotos */
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -49,13 +49,13 @@ h1 {
     transform: scale(1.1);
 }
 
-/* Estilo para o player de áudio */
+
 .audio-player {
     margin-top: 20px;
     text-align: center;
 }
 
-/* Estilo da seta de voltar */
+
 .back-arrow {
     position: absolute;
     left: 20px;
@@ -78,18 +78,18 @@ h1 {
     filter: brightness(1.2);
 }
 
-/* Botão de navegação */
+
 .btn-navegacao {
-    display: none; /* Oculte o botão por padrão */
+    display: none; 
 }
 
-/* Media queries para dispositivos menores */
+
 @media (max-width: 768px) {
     .back-arrow {
-        display: none; /* Esconde a seta em dispositivos móveis */
+        display: none; 
     }
 
-    /* Exibe o botão de navegação apenas em dispositivos móveis */
+    
     .btn-navegacao {
         display: block;
         text-align: center;
@@ -107,6 +107,6 @@ h1 {
     }
 
     .btn-navegacao:hover {
-        background-color: #0a1737; /* Efeito hover */
+        background-color: #0a1737; 
     }
 }

@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400; 
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+    background-image: url(images/jpeg-optimizer_blue-smoke-background-textured-wallpaper-high-resolution.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+
+.container {
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%; 
+    max-width: 650px; 
+    text-align: center;
+    margin: 20px 0; 
+}
+
+
+h1 {
+    font-family: 'Krona One', cursive; 
+    color: #A7DBE6; 
+    font-weight: 600; 
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    font-family: 'Krona One', cursive; 
+    color: #A7DBE6; 
+    font-size: 20px;
+    font-weight: 600; 
+    transition: text-shadow 0.3s ease;
+}
+
+h2:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+p {
+    font-family: 'Montserrat', sans-serif; 
+    color: #6699cc; 
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 500; 
+}
+
+
+.conclusion {
+    font-family: 'Krona One', cursive; 
+    color: #A7DBE6; 
+    font-size: 18px;
+    margin-top: 30px;
+    font-weight: 600; 
+}
+
+
+.arrow {
+    position: absolute; 
+    right: 20px; 
+    bottom: 20px; 
+    z-index: 1000; 
+}
+
+
+.arrow img {
+    width: 400px; 
+    height: auto; 
+    cursor: pointer; 
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.5)); 
+    transition: filter 0.3s ease, transform 0.3s ease; 
+}
+
+
+.arrow img:hover {
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.7)); 
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
+}
+
+
+.btn-navegacao {
+    display: none; 
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+        margin: 10px auto;
+        min-height: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .conclusion {
+        font-size: 16px;
+        margin-bottom: 40px; 
+    }
+
+    
+    .arrow {
+        display: none;
+    }
+
+    
+    .btn-navegacao {
+        display: block; 
+        text-align: center;
+        padding: 10px 20px;
+        background-color: #A7DBE6;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        border-radius: 5px;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 300px;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-navegacao:hover {
+        background-color: #0a1737; 
+    }
+}
+
